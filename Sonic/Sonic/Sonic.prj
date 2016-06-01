@@ -1,0 +1,34 @@
+<Project name="Sonic" guid="9811ba4a-8ae6-495e-aaf9-ed830d8b80e6">
+	<Object name="Magic" guid="df2144f8-ae55-4fcc-a2be-bdda4ee540df" active="true">
+		<Sound name="magic-string-spell-1.wav" guid="5b977ef2-c78a-485b-b482-556fb9f4e5b8">
+		</Sound>
+		<Script name="Rezzed Ring Script.lsl" guid="dccab556-483e-4576-b773-8586e0813441">
+		</Script>
+		<Object name="ring" guid="a4cbbf24-2f23-4118-b1c5-39dfcc262418">
+		</Object>
+		<Script name="Ring Script.lsl" guid="85648128-1d2c-4ad5-b796-618864abb9a9">
+		</Script>
+		<Sound name="sonicring.wav" guid="dfb329e6-5c5b-46ed-b067-abcca97c8ff7">
+		</Sound>
+		<Sound name="sonicringhurt.wav" guid="74828f92-0bcd-45a9-95ca-966092b43d41">
+		</Sound>
+		<Snapshot name="spark1.png" guid="56c14b63-99ce-49f5-a86a-3d828b9b596f">
+		</Snapshot>
+		<Snapshot name="spark2.png" guid="fd58a471-dec5-4a79-8e79-47efd9f123b3">
+		</Snapshot>
+		<Snapshot name="spark3.png" guid="0c2675ba-cb48-46d3-bfad-d3d0993a0c88">
+		</Snapshot>
+		<Snapshot name="spark4.png" guid="155be5f1-677f-4ab9-83b5-3eaf79b56070">
+		</Snapshot>
+		<Snapshot name="spark5.png" guid="83aac709-3839-4b0d-b45c-270c5d6ff4d7">
+		</Snapshot>
+		<Snapshot name="spark6.png" guid="74f9d197-5a71-4a1e-a614-c5fb3fd2f266">
+		</Snapshot>
+	</Object>
+	<Object name="Scoreboard" guid="03b6da0e-fed0-4a8b-9ef0-59ca5a392f79">
+		<Script name="http Script.lsl" guid="f39bf50c-3751-4bae-8654-e2483de60d10">
+		</Script>
+		<Script name="scorekeeper.lsl" guid="8194d1fb-ce84-463c-acbc-38f48f180c4a">
+		</Script>
+	</Object>
+</Project>

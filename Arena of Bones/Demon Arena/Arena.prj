@@ -1,0 +1,56 @@
+<Project name="Arena" guid="777ede37-df86-4a3c-bda7-1cc161a0edd2">
+	<Object name="Controller Ball" guid="cc0b9551-daaf-4b8f-9a30-db2583e60756">
+		<Script name="Collider Trigger.lsl" guid="c64d2bcb-45c7-4782-a4df-30a32dd36e30">
+		</Script>
+		<Script name="Rezzer.lsl" guid="c3c91d30-87fa-47c3-a088-252a123f293b">
+		</Script>
+	</Object>
+	<Object name="Demon Controller" guid="6b25a34d-145d-4487-bea5-83c3ebf4914d">
+		<Notecard name="Appearance" guid="17ab0e56-204d-4cac-9ac7-1c16e6107318">
+		</Notecard>
+		<Object name="Box" guid="56ccf32b-9aa9-456a-90dc-f551bddf95dd">
+		</Object>
+		<Script name="Demon Controller1.lsl" guid="93bc5651-00f4-4639-949d-98e8b536397e">
+		</Script>
+		<Script name="Pirate Controller.lsl" guid="dc365756-a0a7-4d9c-b527-249752bdbb9b">
+		</Script>
+		<Script name="smoke.lsl" guid="cc84adbc-88e0-477c-be33-42b4448ad679">
+		</Script>
+	</Object>
+	<Object name="NPC Demon" guid="288c3db8-bcc6-48dc-a5a3-a73a5b958f09" active="true">
+		<Sound name="back-in-time.wav" guid="144d1827-390b-48ed-9332-d9bfae270389">
+		</Sound>
+		<Sound name="clang1.wav" guid="a809f679-2301-4d95-9e15-588e8ed64263">
+		</Sound>
+		<Sound name="clang2.wav" guid="007d8eff-acef-467d-8f92-b748002dfb5b">
+		</Sound>
+		<Sound name="clang3.wav" guid="d11f245f-5e30-4333-b46e-010380f1616f">
+		</Sound>
+		<Sound name="Flick.wav" guid="cbd13019-3041-4072-bb09-bc3fa20f8b1d">
+		</Sound>
+		<Sound name="footstep.wav" guid="6016a2e4-fdb5-4388-ad56-d62163204ae5">
+		</Sound>
+		<Sound name="footstepmuffled.wav" guid="55a1295d-2219-4644-bb64-8bf0d53255fa">
+		</Sound>
+		<Script name="Head Hovertext.lsl" guid="01d41548-f332-4e38-87e6-489481bd967e">
+		</Script>
+		<Sound name="Monster1.wav" guid="a6a173d3-4bbd-4dff-b891-8f91bf9c13ac">
+		</Sound>
+		<Script name="NPC Skeleton Cylinder.lsl" guid="05f415ee-c84a-4d3a-8ebf-1d02df11df33">
+		</Script>
+		<Sound name="quickstab.wav" guid="d9683766-114c-4ddc-9c04-7d88cfaf010f">
+		</Sound>
+		<Sound name="Zdeath.wav" guid="1b0a5e35-8164-4ffe-a82d-ecf503c5c49f">
+		</Sound>
+	</Object>
+	<Object name="SL Score keeper" guid="8f385c25-04b1-4848-b335-500c05b2e58e">
+		<Script name="Main.lsl" guid="3c550d92-bc40-43c7-9719-e33a981604a9">
+		</Script>
+	</Object>
+	<Object name="SL trap door Collider" guid="90e7c641-179f-4dc7-bd67-ac47d50b02ed">
+		<Sound name="Arena of Death" guid="fa36f282-3f83-4b6d-9770-fe64611507ea">
+		</Sound>
+		<Script name="Collider.lsl" guid="0c63c49b-7f02-450b-922b-582042755b71">
+		</Script>
+	</Object>
+</Project>

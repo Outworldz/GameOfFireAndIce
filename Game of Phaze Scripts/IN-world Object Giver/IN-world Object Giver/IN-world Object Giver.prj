@@ -1,0 +1,10 @@
+<Project name="IN-world Object Giver" guid="8312dad5-d02a-41f4-a153-1bcf410938a1">
+	<Object name="Prim Controller" guid="e6fc57b8-f225-46e3-ac67-d2ab2ee7a0a5" active="true">
+		<Script name="HTTP-IN giver.lsl" guid="c2e320b9-08d7-4d5b-b353-fac0702c4c24">
+		</Script>
+		<Script name="notecard giver.lsl" guid="0a104df9-f795-485a-9929-a219b9d2d339">
+		</Script>
+		<Script name="Game Receiver.lsl" guid="5aefc13c-fbf8-4f7b-b28d-07a0f781b97b">
+		</Script>
+	</Object>
+</Project>

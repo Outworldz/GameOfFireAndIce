@@ -1,0 +1,10 @@
+<Project name="WaveFileUpdater" guid="a40ebae1-e69e-4725-add6-f9eb1345dc0e">
+	<Object name="WaveUpdater" guid="d9960699-b226-41b0-86d7-95efe243af4e" active="true">
+		<Sound name="Sound.snd" guid="57b26efd-43c9-4b56-83ea-c0d15e8f3177">
+		</Sound>
+		<Sound name="Sound2.snd" guid="b9c36c5d-cdd4-4adb-aabd-e27edc201435">
+		</Sound>
+		<Script name="SoundUpdater.lsl" guid="81c66be7-e955-42d1-9ed3-699cc2df1400">
+		</Script>
+	</Object>
+</Project>

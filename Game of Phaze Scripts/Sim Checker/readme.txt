@@ -1,0 +1,1 @@
+A script that registers a callback at the srver.  A Perl service interrogates this script for a response. It would try to llSensor a nearby prim.  If it faioed, the service would reset the server.

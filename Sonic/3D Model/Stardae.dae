@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 2.68.0 r58368</authoring_tool>
+    </contributor>
+    <created>2014-04-07T17:08:46</created>
+    <modified>2014-04-07T17:08:46</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="spark1_png" name="spark1_png">
+      <init_from>spark1.png</init_from>
+    </image>
+    <image id="cool_ice_texture_jpg" name="cool_ice_texture_jpg">
+      <init_from>cool_ice_texture.jpg</init_from>
+    </image>
+  </library_images>
+  <library_effects>
+    <effect id="_-effect">
+      <profile_COMMON>
+        <newparam sid="cool_ice_texture_jpg-surface">
+          <surface type="2D">
+            <init_from>cool_ice_texture_jpg</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="cool_ice_texture_jpg-sampler">
+          <sampler2D>
+            <source>cool_ice_texture_jpg-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="cool_ice_texture_jpg-sampler" texcoord="UVMap"/>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.1 0.1 0.1 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">1</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+        <extra>
+          <technique profile="GOOGLEEARTH">
+            <double_sided>1</double_sided>
+          </technique>
+        </extra>
+      </profile_COMMON>
+      <extra><technique profile="MAX3D"><double_sided>1</double_sided></technique></extra>
+    </effect>
+    <effect id="_2-effect">
+      <profile_COMMON>
+        <newparam sid="spark1_png-surface">
+          <surface type="2D">
+            <init_from>spark1_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="spark1_png-sampler">
+          <sampler2D>
+            <source>spark1_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="spark1_png-sampler" texcoord="UVMap"/>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+        <extra>
+          <technique profile="GOOGLEEARTH">
+            <double_sided>1</double_sided>
+          </technique>
+        </extra>
+      </profile_COMMON>
+      <extra><technique profile="MAX3D"><double_sided>1</double_sided></technique></extra>
+    </effect>
+    <effect id="_3-effect">
+      <profile_COMMON>
+        <newparam sid="spark1_png-surface">
+          <surface type="2D">
+            <init_from>spark1_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="spark1_png-sampler">
+          <sampler2D>
+            <source>spark1_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="spark1_png-sampler" texcoord="UVMap"/>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+        <extra>
+          <technique profile="GOOGLEEARTH">
+            <double_sided>1</double_sided>
+          </technique>
+        </extra>
+      </profile_COMMON>
+      <extra><technique profile="MAX3D"><double_sided>1</double_sided></technique></extra>
+    </effect>
+    <effect id="_4-effect">
+      <profile_COMMON>
+        <newparam sid="spark1_png-surface">
+          <surface type="2D">
+            <init_from>spark1_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="spark1_png-sampler">
+          <sampler2D>
+            <source>spark1_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="spark1_png-sampler" texcoord="UVMap"/>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+        <extra>
+          <technique profile="GOOGLEEARTH">
+            <double_sided>1</double_sided>
+          </technique>
+        </extra>
+      </profile_COMMON>
+      <extra><technique profile="MAX3D"><double_sided>1</double_sided></technique></extra>
+    </effect>
+    <effect id="_5-effect">
+      <profile_COMMON>
+        <newparam sid="spark1_png-surface">
+          <surface type="2D">
+            <init_from>spark1_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="spark1_png-sampler">
+          <sampler2D>
+            <source>spark1_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="spark1_png-sampler" texcoord="UVMap"/>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+        <extra>
+          <technique profile="GOOGLEEARTH">
+            <double_sided>1</double_sided>
+          </technique>
+        </extra>
+      </profile_COMMON>
+      <extra><technique profile="MAX3D"><double_sided>1</double_sided></technique></extra>
+    </effect>
+    <effect id="_6-effect">
+      <profile_COMMON>
+        <newparam sid="spark1_png-surface">
+          <surface type="2D">
+            <init_from>spark1_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="spark1_png-sampler">
+          <sampler2D>
+            <source>spark1_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="spark1_png-sampler" texcoord="UVMap"/>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+        <extra>
+          <technique profile="GOOGLEEARTH">
+            <double_sided>1</double_sided>
+          </technique>
+        </extra>
+      </profile_COMMON>
+      <extra><technique profile="MAX3D"><double_sided>1</double_sided></technique></extra>
+    </effect>
+    <effect id="_7-effect">
+      <profile_COMMON>
+        <newparam sid="spark1_png-surface">
+          <surface type="2D">
+            <init_from>spark1_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="spark1_png-sampler">
+          <sampler2D>
+            <source>spark1_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="spark1_png-sampler" texcoord="UVMap"/>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+        <extra>
+          <technique profile="GOOGLEEARTH">
+            <double_sided>1</double_sided>
+          </technique>
+        </extra>
+      </profile_COMMON>
+      <extra><technique profile="MAX3D"><double_sided>1</double_sided></technique></extra>
+    </effect>
+    <effect id="_8-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.64 0.64 0.64 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+        <extra>
+          <technique profile="GOOGLEEARTH">
+            <double_sided>1</double_sided>
+          </technique>
+        </extra>
+      </profile_COMMON>
+      <extra><technique profile="MAX3D"><double_sided>1</double_sided></technique></extra>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="_-material" name="_">
+      <instance_effect url="#_-effect"/>
+    </material>
+    <material id="_2-material" name="_2">
+      <instance_effect url="#_2-effect"/>
+    </material>
+    <material id="_3-material" name="_3">
+      <instance_effect url="#_3-effect"/>
+    </material>
+    <material id="_4-material" name="_4">
+      <instance_effect url="#_4-effect"/>
+    </material>
+    <material id="_5-material" name="_5">
+      <instance_effect url="#_5-effect"/>
+    </material>
+    <material id="_6-material" name="_6">
+      <instance_effect url="#_6-effect"/>
+    </material>
+    <material id="_7-material" name="_7">
+      <instance_effect url="#_7-effect"/>
+    </material>
+    <material id="_8-material" name="_8">
+      <instance_effect url="#_8-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="line-mesh" name="line">
+      <mesh>
+        <source id="line-mesh-positions">
+          <float_array id="line-mesh-positions-array" count="192">0.01895725 0.03719884 0.03778862 -0.019481 0.03719884 -0.02425533 0.02027875 -0.03577053 0.0369699 -0.01815944 -0.03577059 -0.025074 0.02984464 0.0380125 0.02955478 -0.02993857 0.0380125 -0.012313 0.03073638 -0.03495693 0.02828145 -0.02904683 -0.03495693 -0.0135864 -0.01366305 0.0380125 0.04078 0.01301383 0.0380125 -0.02715593 -0.01221603 -0.03495693 0.04134827 0.01446086 -0.03495693 -0.02658772 0.03446757 0.0377413 -0.005668044 -0.03308099 0.0377413 0.02197492 0.0338788 -0.03522813 -0.00710684 -0.03366982 -0.03522813 0.02053618 0.0210483 0.0382837 -0.0230503 -0.01895016 0.0382837 0.03799945 0.01974797 -0.03468573 -0.02390223 -0.02025049 -0.03468573 0.03714752 0.03689187 0.0382837 0.009572744 -0.03609406 0.0382837 0.009572744 0.03689187 -0.03468573 0.008018136 -0.03609406 -0.03468573 0.008018136 -0.0291568 0.04873412 0.03251224 0.04759365 0.02767467 0.03239941 -0.05793792 -0.001650631 0.03251224 -0.04815536 0.02915167 0.03251224 0.02859514 -0.05309516 0.03251218 -2.80657e-4 -0.06129878 0.03251218 0.05489253 -0.001521885 0.03251224 0.04968154 -0.03086996 0.03251218 0.02745753 0.04873412 0.03251224 -2.80657e-4 0.05656152 0.03251224 -0.05024242 -0.03086996 0.03251218 -0.0291568 -0.05309516 0.03251218 0.05489253 -0.00188452 -0.02722245 0.04759365 0.02716857 -0.02737104 0.1643394 -0.002090275 0.003402352 0.08026552 0.03974765 0.003402352 0.02745753 0.04850023 -0.02722245 0.0553624 0.08391982 0.003402352 -2.80657e-4 0.05632764 -0.02722245 -1.77747e-5 0.2342537 0.003012418 -0.0291568 0.04850023 -0.02722245 -0.05538159 0.08391982 0.003402352 -0.04815536 0.02883464 -0.02722245 -0.08028441 0.03974765 0.003402352 -0.05793792 -0.00188452 -0.02722245 -0.1643233 -0.0016703 0.003402352 -0.05024242 -0.03110384 -0.02722245 -0.08028441 -0.04298728 0.003402352 -0.0291568 -0.05332905 -0.02722245 -0.05538159 -0.08715915 0.003402352 -2.80657e-4 -0.06153267 -0.02722245 -1.77747e-5 -0.2372569 0.003012418 0.02859514 -0.05332905 -0.02722245 0.0553624 -0.08715915 0.003402352 0.04968154 -0.03110384 -0.02722245 0.08026558 -0.04298728 0.003402352 0.03584915 0.03719884 0.02407848 -0.02957272 0.03719884 -0.008277654 0.03653836 -0.03577053 0.02268505 -0.02888357 -0.03577059 -0.009671151</float_array>
+          <technique_common>
+            <accessor source="#line-mesh-positions-array" count="64" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="line-mesh-normals">
+          <float_array id="line-mesh-normals-array" count="258">0.8498876 0.02129971 -0.5265333 0.5735124 0.02129966 -0.81892 0.9305973 0.02129989 0.3654242 -0.3786585 0.02129971 -0.9252913 -0.8362688 0.02129966 -0.5479058 0 0.02129966 -0.9997732 0.2565488 -0.04555255 0.9654573 0.5802689 -0.3271442 0.7458315 0.5976154 -0.3369238 -0.7275564 0.579689 -0.2159234 0.7857084 0.6011848 -0.2198178 -0.7682819 -0.04694139 -0.1652306 0.9851372 -0.0481373 -0.1694407 -0.9843641 -0.4101499 -0.3891195 0.8248413 -0.4253743 -0.4035627 -0.8100579 -0.3396829 -0.6909167 0.6381611 -0.3477156 -0.7072553 -0.6155354 -0.2630168 0.08353215 0.9611684 -0.275404 0.08770304 -0.9573196 -0.5892177 0.3321818 -0.7365309 -0.6011077 0.2193781 -0.7684678 0.04614716 0.1635339 0.9854578 0.04720258 0.1672734 -0.98478 0.3982241 0.3762819 0.8365582 0.4084196 0.3912748 -0.8246802 0.2567724 0.06791633 0.9640826 0.2690702 -0.04798614 -0.9619244 0.2690438 0.06267499 -0.9610865 0.7254589 0.6882603 -0.002694845 -0.2715801 -0.9624086 0.003768682 -0.9845994 0.174824 -6.84527e-4 0.2732795 0.9619273 -0.003766596 -0.9701448 -0.2425224 0.001472234 -0.2732826 0.9619264 -0.003766655 -0.7254449 0.6882749 -0.002695024 0.9528501 -0.3034372 0.001610457 0.9670232 0.2546861 -9.97143e-4 -0.7227463 -0.6910887 0.005851686 -0.5810992 0.216038 0.7846347 -0.5743782 0.3238157 0.7518199 0.7191972 -0.6948007 0.002720713 0.2616239 -0.9651625 0.00377947 0.44322 0.02129977 -0.8961597 0.8498877 0.02129971 -0.5265332 0.5735124 0.02129966 -0.8189199 0.9305973 0.02129989 0.3654242 -0.3786585 0.02129966 -0.9252912 -0.8362688 0.02129971 -0.5479058 0 0.02129966 -0.9997732 0.3359504 -0.6906288 0.6404446 0.407568 -0.3866853 0.8272622 0.4227808 -0.4011182 -0.8126257 0.04690331 -0.1650945 0.9851618 0.04809826 -0.1693012 -0.98439 -0.5846992 -0.2176973 0.7814951 -0.6061542 -0.2215968 -0.7638533 -0.5849696 -0.3297891 0.740979 -0.6022359 -0.3395234 -0.7225204 -0.2632777 -0.06933993 0.962225 -0.2760362 -0.0726999 -0.9583938 -0.3427745 0.6955043 0.6314897 -0.3479957 0.7060984 -0.6167042 -0.4142064 0.400156 -0.8175012 -0.04538226 0.1674205 -0.9848405 0.5659858 0.2105659 0.797071 0.5861399 0.2138959 -0.7814657 0.561531 0.3165768 0.7645013 0.5785596 0.3261771 -0.747581 0.3353315 0.6738527 0.6583883 0.3439491 -0.7070723 -0.6178573 0.3413102 0.6858668 -0.642724 0.7254587 0.6882604 -0.002695024 -0.2715801 -0.9624086 0.003768622 -0.9844662 0.1755706 -0.00106579 0.2732793 0.9619273 -0.003766655 -0.9698625 -0.2436443 0.002062976 -0.2732827 0.9619264 -0.003766596 -0.7254452 0.6882748 -0.002694904 0.9530873 -0.3026934 0.001185059 0.9670232 0.2546862 -9.97229e-4 -0.727179 -0.6864426 0.00268799 -0.04436743 0.1636775 0.9855157 -0.4002915 0.388354 0.8300288 0.7177226 -0.6963193 0.003695607 0.2616239 -0.9651625 0.00377947 0.4432201 0.02129966 -0.8961597</float_array>
+          <technique_common>
+            <accessor source="#line-mesh-normals-array" count="86" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="line-mesh-map-0">
+          <float_array id="line-mesh-map-0-array" count="516">8.66923e-5 8.65875e-5 0.9939567 8.66574e-5 8.65875e-5 0.9999135 8.66923e-5 8.65875e-5 0.9939567 8.66574e-5 8.65875e-5 0.9999135 8.66923e-5 8.65875e-5 0.9939567 8.66574e-5 8.65875e-5 0.9999135 8.66923e-5 8.65875e-5 0.9939567 8.66574e-5 8.65875e-5 0.9999135 8.66923e-5 8.65875e-5 0.9939567 8.66574e-5 8.65875e-5 0.9999135 8.66923e-5 8.65875e-5 0.9939567 8.66574e-5 8.65875e-5 0.9999135 2.921621 0.03698533 2.912073 -0.8183985 3.81558 -0.7986976 3.84141 0.03657841 3.81558 -0.7986976 4.808728 0.03572928 3.821685 0.9179655 3.84141 0.03657841 4.808728 0.03572928 4.808728 0.03572928 4.795889 -0.8264229 5.824603 0.03526413 4.799646 0.9442262 4.808728 0.03572928 5.824603 0.03526413 -5.80499 0.03526413 -5.801741 -0.839262 -4.771046 -0.8245734 -5.801846 0.9564135 -5.80499 0.03526413 -4.774819 0.9423884 -4.790054 0.03572928 -4.771046 -0.8245734 -3.79378 -0.7957906 -4.774819 0.9423884 -4.790054 0.03572928 -3.799873 0.915093 -3.822865 0.03659021 -3.79378 -0.7957906 -2.898216 0.03698533 -3.799873 0.915093 -3.822865 0.03659021 -2.898216 0.03698533 -2.898216 0.03698533 -2.89761 -0.7785435 -1.926954 -0.8125017 -2.904368 0.8993468 -2.898216 0.03698533 -1.935235 0.9353063 -1.935235 0.9353063 -1.973565 0.03659021 -1.006374 0.03572928 -1.046008 0.9602288 -1.006374 0.03572928 0.008556604 0.03526413 0.008556604 0.03526413 0.005207419 -0.8599742 1.020522 -0.8485422 0.005207419 0.9839646 0.008556604 0.03526413 1.024349 0.9719858 1.024487 0.03572928 1.020522 -0.8485422 1.980597 -0.8223989 1.024349 0.9719858 1.024487 0.03572928 1.994191 0.9539131 1.980597 -0.8223989 2.912073 -0.8183985 2.921621 0.03698533 2.923063 0.939016 2.921621 0.03698533 3.821685 0.9179655 2.923063 0.939016 1.994191 0.9539131 2.921621 0.03698533 -3.799873 0.915093 -3.79378 -0.7957906 -4.774819 0.9423884 1.024349 0.9719858 1.020522 -0.8485422 0.005207419 -0.8599742 3.821685 0.9179655 3.81558 -0.7986976 2.912073 -0.8183985 -4.774819 0.9423884 -4.771046 -0.8245734 -5.801846 0.9564135 2.923063 0.939016 2.912073 -0.8183985 1.980597 -0.8223989 5.827857 0.9564135 5.827857 -0.839262 4.795889 -0.8264229 4.799646 0.9442262 4.795889 -0.8264229 3.81558 -0.7986976 -1.935235 0.9353063 -1.926954 -0.8125017 -2.904368 0.8993468 -2.904368 0.8993468 -2.89761 -0.7785435 -3.799873 0.915093 1.994191 0.9539131 1.980597 -0.8223989 1.020522 -0.8485422 -1.006374 0.03572928 -1.0421 -0.8368427 0.008556604 0.03526413 -1.973565 0.03659021 -1.926954 -0.8125017 -1.006374 0.03572928 -1.046008 0.9602288 -1.0421 -0.8368427 -1.935235 0.9353063 0.005207419 0.9839646 0.005207419 -0.8599742 -1.046008 0.9602288 8.66923e-5 8.65875e-5 0.9939567 8.66574e-5 8.65875e-5 0.9999135 0.9939567 8.66574e-5 0.9939567 0.9999135 8.65875e-5 0.9999135 0.9939567 8.66574e-5 0.9939567 0.9999135 8.65875e-5 0.9999135 0.9939567 8.66574e-5 0.9939567 0.9999135 8.65875e-5 0.9999135 0.9939567 8.66574e-5 0.9939567 0.9999135 8.65875e-5 0.9999135 0.9939567 8.66574e-5 0.9939567 0.9999135 8.65875e-5 0.9999135 0.9939567 8.66574e-5 0.9939567 0.9999135 8.65875e-5 0.9999135 3.84141 0.03657841 2.921621 0.03698533 3.81558 -0.7986976 3.81558 -0.7986976 4.795889 -0.8264229 4.808728 0.03572928 4.799646 0.9442262 3.821685 0.9179655 4.808728 0.03572928 4.795889 -0.8264229 5.827857 -0.839262 5.824603 0.03526413 5.827857 0.9564135 4.799646 0.9442262 5.824603 0.03526413 -4.790054 0.03572928 -5.80499 0.03526413 -4.771046 -0.8245734 -5.80499 0.03526413 -4.790054 0.03572928 -4.774819 0.9423884 -3.822865 0.03659021 -4.790054 0.03572928 -3.79378 -0.7957906 -4.790054 0.03572928 -3.822865 0.03659021 -3.799873 0.915093 -3.79378 -0.7957906 -2.89761 -0.7785435 -2.898216 0.03698533 -2.904368 0.8993468 -3.799873 0.915093 -2.898216 0.03698533 -1.973565 0.03659021 -2.898216 0.03698533 -1.926954 -0.8125017 -2.898216 0.03698533 -1.973565 0.03659021 -1.935235 0.9353063 -1.046008 0.9602288 -1.935235 0.9353063 -1.006374 0.03572928 0.005207419 0.9839646 -1.046008 0.9602288 0.008556604 0.03526413 1.024487 0.03572928 0.008556604 0.03526413 1.020522 -0.8485422 0.008556604 0.03526413 1.024487 0.03572928 1.024349 0.9719858 1.991808 0.03657841 1.024487 0.03572928 1.980597 -0.8223989 1.024487 0.03572928 1.991808 0.03657841 1.994191 0.9539131 1.991808 0.03657841 1.980597 -0.8223989 2.921621 0.03698533 2.921621 0.03698533 3.84141 0.03657841 3.821685 0.9179655 1.994191 0.9539131 1.991808 0.03657841 2.921621 0.03698533 -3.79378 -0.7957906 -4.771046 -0.8245734 -4.774819 0.9423884 0.005207419 0.9839646 1.024349 0.9719858 0.005207419 -0.8599742 2.923063 0.939016 3.821685 0.9179655 2.912073 -0.8183985 -4.771046 -0.8245734 -5.801741 -0.839262 -5.801846 0.9564135 1.994191 0.9539131 2.923063 0.939016 1.980597 -0.8223989 4.799646 0.9442262 5.827857 0.9564135 4.795889 -0.8264229 3.821685 0.9179655 4.799646 0.9442262 3.81558 -0.7986976 -1.926954 -0.8125017 -2.89761 -0.7785435 -2.904368 0.8993468 -2.89761 -0.7785435 -3.79378 -0.7957906 -3.799873 0.915093 1.024349 0.9719858 1.994191 0.9539131 1.020522 -0.8485422 -1.0421 -0.8368427 0.005207419 -0.8599742 0.008556604 0.03526413 -1.926954 -0.8125017 -1.0421 -0.8368427 -1.006374 0.03572928 -1.0421 -0.8368427 -1.926954 -0.8125017 -1.935235 0.9353063 0.005207419 -0.8599742 -1.0421 -0.8368427 -1.046008 0.9602288 0.9939567 8.66574e-5 0.9939567 0.9999135 8.65875e-5 0.9999135</float_array>
+          <technique_common>
+            <accessor source="#line-mesh-map-0-array" count="258" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="line-mesh-vertices">
+          <input semantic="POSITION" source="#line-mesh-positions"/>
+        </vertices>
+        <polylist material="_-material" count="72">
+          <input semantic="VERTEX" source="#line-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#line-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#line-mesh-map-0" offset="2" set="0"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>38 6 18 30 6 19 31 6 20 59 7 21 31 7 22 57 7 23 58 8 24 59 8 25 57 8 26 57 9 27 28 9 28 55 9 29 56 10 30 57 10 31 55 10 32 55 11 33 29 11 34 35 11 35 54 12 36 55 12 37 52 12 38 53 13 39 35 13 40 34 13 41 52 14 42 53 14 43 50 14 44 51 15 45 34 15 46 49 15 47 50 16 48 51 16 49 49 16 50 49 17 51 26 17 52 27 17 53 48 18 54 49 18 55 46 18 56 46 19 57 47 19 58 45 19 59 44 20 60 45 20 61 43 20 62 43 21 63 33 21 64 32 21 65 42 22 66 43 22 67 40 22 68 41 23 69 32 23 70 25 23 71 40 24 72 41 24 73 37 24 74 25 25 75 30 25 76 38 25 77 36 26 78 38 26 79 58 26 80 36 27 81 37 27 82 38 27 83 50 28 84 34 28 85 52 28 86 40 29 87 32 29 88 33 29 89 58 30 90 31 30 91 30 30 92 52 31 93 35 31 94 54 31 95 36 32 96 30 32 97 25 32 98 54 33 99 29 33 100 28 33 101 56 34 102 28 34 103 31 34 104 46 35 105 27 35 106 48 35 107 48 36 108 26 36 109 50 36 110 37 37 111 25 37 112 32 37 113 45 38 114 24 38 115 43 38 116 47 39 117 27 39 118 45 39 119 44 40 120 24 40 121 46 40 122 42 41 123 33 41 124 44 41 125 59 49 147 38 49 148 31 49 149 31 50 150 28 50 151 57 50 152 56 51 153 58 51 154 57 51 155 28 52 156 29 52 157 55 52 158 54 53 159 56 53 160 55 53 161 53 54 162 55 54 163 35 54 164 55 55 165 53 55 166 52 55 167 51 56 168 53 56 169 34 56 170 53 57 171 51 57 172 50 57 173 34 58 174 26 58 175 49 58 176 48 59 177 50 59 178 49 59 179 47 60 180 49 60 181 27 60 182 49 61 183 47 61 184 46 61 185 44 62 186 46 62 187 45 62 188 42 63 189 44 63 190 43 63 191 41 64 192 43 64 193 32 64 194 43 65 195 41 65 196 40 65 197 39 66 198 41 66 199 25 66 200 41 67 201 39 67 202 37 67 203 39 68 204 25 68 205 38 68 206 38 69 207 59 69 208 58 69 209 37 70 210 39 70 211 38 70 212 34 71 213 35 71 214 52 71 215 42 72 216 40 72 217 33 72 218 36 73 219 58 73 220 30 73 221 35 74 222 29 74 223 54 74 224 37 75 225 36 75 226 25 75 227 56 76 228 54 76 229 28 76 230 58 77 231 56 77 232 31 77 233 27 78 234 26 78 235 48 78 236 26 79 237 34 79 238 50 79 239 40 80 240 37 80 241 32 80 242 24 81 243 33 81 244 43 81 245 27 82 246 24 82 247 45 82 248 24 83 249 27 83 250 46 83 251 33 84 252 24 84 253 44 84 254</p>
+        </polylist>
+        <polylist material="_2-material" count="2">
+          <input semantic="VERTEX" source="#line-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#line-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#line-mesh-map-0" offset="2" set="0"/>
+          <vcount>3 3 </vcount>
+          <p>21 5 15 20 5 16 23 5 17 20 48 144 22 48 145 23 48 146</p>
+        </polylist>
+        <polylist material="_3-material" count="2">
+          <input semantic="VERTEX" source="#line-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#line-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#line-mesh-map-0" offset="2" set="0"/>
+          <vcount>3 3 </vcount>
+          <p>17 4 12 16 4 13 19 4 14 16 47 141 18 47 142 19 47 143</p>
+        </polylist>
+        <polylist material="_4-material" count="2">
+          <input semantic="VERTEX" source="#line-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#line-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#line-mesh-map-0" offset="2" set="0"/>
+          <vcount>3 3 </vcount>
+          <p>9 2 6 8 2 7 11 2 8 8 45 135 10 45 136 11 45 137</p>
+        </polylist>
+        <polylist material="_5-material" count="4">
+          <input semantic="VERTEX" source="#line-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#line-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#line-mesh-map-0" offset="2" set="0"/>
+          <vcount>3 3 3 3 </vcount>
+          <p>1 0 0 0 0 1 3 0 2 61 42 126 60 42 127 63 42 128 0 43 129 2 43 130 3 43 131 60 85 255 62 85 256 63 85 257</p>
+        </polylist>
+        <polylist material="_6-material" count="2">
+          <input semantic="VERTEX" source="#line-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#line-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#line-mesh-map-0" offset="2" set="0"/>
+          <vcount>3 3 </vcount>
+          <p>5 1 3 4 1 4 7 1 5 4 44 132 6 44 133 7 44 134</p>
+        </polylist>
+        <polylist material="_7-material" count="2">
+          <input semantic="VERTEX" source="#line-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#line-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#line-mesh-map-0" offset="2" set="0"/>
+          <vcount>3 3 </vcount>
+          <p>13 3 9 12 3 10 15 3 11 12 46 138 14 46 139 15 46 140</p>
+        </polylist>
+      </mesh>
+      <extra><technique profile="MAYA"><double_sided>1</double_sided></technique></extra>
+    </geometry>
+  </library_geometries>
+  <library_controllers/>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="Star" name="Star" type="NODE">
+        <matrix sid="transform">1 0 0 0 0 -1.62921e-7 -1 0.03808695 0 1 -1.62921e-7 0 0 0 0 1</matrix>
+        <node id="Fluff" name="Fluff" type="NODE">
+          <matrix sid="transform">1 0 0 0 0 1 0 -1.29307e-9 0 0 1 -0.007936835 0 0 0 1</matrix>
+          <instance_geometry url="#line-mesh">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="_-material" target="#_-material">
+                  <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+                </instance_material>
+                <instance_material symbol="_2-material" target="#_2-material">
+                  <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+                </instance_material>
+                <instance_material symbol="_3-material" target="#_3-material">
+                  <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+                </instance_material>
+                <instance_material symbol="_4-material" target="#_4-material">
+                  <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+                </instance_material>
+                <instance_material symbol="_5-material" target="#_5-material">
+                  <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+                </instance_material>
+                <instance_material symbol="_6-material" target="#_6-material">
+                  <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+                </instance_material>
+                <instance_material symbol="_7-material" target="#_7-material">
+                  <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+                </instance_material>
+                <instance_material symbol="_8-material" target="#_8-material">
+                  <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+                </instance_material>
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>

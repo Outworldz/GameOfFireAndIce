@@ -1,0 +1,12 @@
+<Project name="BotChatBot" guid="1f9e8043-98f3-4f34-b377-d3654b13b1fc">
+	<Object name="Object" guid="342d408d-da23-432a-96be-f970fe753a72" active="true">
+		<Script name="chat master.lsl" guid="c34a5b59-9ee5-4945-93c9-b67df68b0245">
+		</Script>
+		<Script name="triggerBotchat.lsl" guid="3f5ef326-58b3-4d7c-8fe2-153b91fe04af">
+		</Script>
+	</Object>
+	<Object name="TV" guid="866ddaba-4da3-4db6-8a2a-05c1ec85818c">
+		<Script name="TV Script.lsl" guid="80245a94-a583-457b-882e-562d60be219e">
+		</Script>
+	</Object>
+</Project>
