@@ -1,0 +1,132 @@
+<Project name="Game of Phaze Scripts" guid="caa4ff47-9a30-42ed-9e55-6f25be623333">
+	<Object name="Burning Tree" guid="94fcdf14-b414-46db-91ab-9f8ab6d2d99c">
+		<Sound name="glass1.wav" guid="f96b35db-e05a-4335-8808-1ebae974aee2">
+		</Sound>
+		<Sound name="glass2.wav" guid="ffac8da6-3df0-40da-8988-c5253153e302">
+		</Sound>
+		<Sound name="glass3.wav" guid="e6180472-1c4f-4646-81f1-6fc998f5f7ba">
+		</Sound>
+		<Sound name="magic-string-spell-1.wav" guid="72d1e94f-cc0e-4ae1-af27-b270ca3ef954">
+		</Sound>
+		<Script name="Script.lsl" guid="df6364fa-18bc-4232-9a72-f4febb5549fe">
+		</Script>
+		<Sound name="sonicringhurt.wav" guid="33b575b6-1bfe-4fcf-8c64-55beaaf2d1d9">
+		</Sound>
+	</Object>
+	<Object name="Dragon bullets" guid="9e1c0ad2-da4d-46c4-b6f9-251d6bcfe935">
+		<Script name="fire parricles.lsl" guid="bba31f49-c0f7-4ad9-9b47-caddc2cfdca1">
+		</Script>
+		<Script name="missile script.lsl" guid="9c04c551-d7cf-46e7-874a-d6d726ea866e">
+		</Script>
+		<Script name="rocket smoke.lsl" guid="a52489c3-ffc5-439f-84ca-ff8f84c4274e">
+		</Script>
+		<Script name="shin bullet.lsl" guid="79108757-30e2-4d3a-94d8-70ab2fcd60c8">
+		</Script>
+		<Script name="shin rezzer.lsl" guid="0dd76af4-5a57-4906-90c9-000938d77512">
+		</Script>
+	</Object>
+	<Object name="Dragon Collider" guid="95c1514f-bef3-44ef-b618-d9d0ceed7af7">
+		<Script name="Modified NPC automator.lsl" guid="a99b1c4b-6bbe-4254-948d-c41039e09562">
+		</Script>
+		<Script name="sheep collider.lsl" guid="94fa4c38-027a-4c95-aae5-86a21d3d621b">
+		</Script>
+		<Script name="Sheep.lsl" guid="99ff0fc4-0ab7-410e-b85b-3fd9cd3c4aab">
+		</Script>
+	</Object>
+	<Object name="Dragon Sensor" guid="8ef8745a-2fec-42a3-8a42-306a889156ee" active="true">
+		<Sound name="flameSound.wav" guid="a5f4d101-2a77-432f-9c75-45d760da586e">
+		</Sound>
+		<Script name="Mars attacks.lsl" guid="e682811a-428e-4760-9a34-0fed89b44267">
+		</Script>
+		<Sound name="Monster1.wav" guid="17a3db86-1e73-47c1-bbe6-5bb71e746a5a">
+		</Sound>
+		<Sound name="sonicring.wav" guid="ea1827e5-cf1c-4bb8-bcd6-1a8271657f1a">
+		</Sound>
+	</Object>
+	<Object name="Game Prim" guid="8be84bf5-64b4-450a-8978-b7075eb5cac3">
+		<Script name="Advance Game.lsl" guid="ed22769e-3122-40bc-809b-fae7b6bb9fc6">
+		</Script>
+		<Script name="black smoke output.lsl" guid="1fb352b0-3699-4bca-9810-00ef66861cc2">
+		</Script>
+		<Script name="Game prim script 4.8.lsl" guid="6073f22f-f909-4e11-b05b-0438fdfbb58b">
+		</Script>
+		<Script name="Game prim script 4.9.lsl" guid="f8ebf497-ecd0-4913-8d65-b39cd23c9e92">
+		</Script>
+		<Script name="Game prim script 5.0.lsl" guid="f5b21807-0255-495f-b7bd-054308f6dabf">
+		</Script>
+		<Script name="Game Prim Script 5.1.lsl" guid="a4b46d56-940c-42cd-8914-a0610cafe565">
+		</Script>
+		<Script name="Game Prim Script 5.2.lsl" guid="a666847f-868b-439d-9944-4eb1c758b42a">
+		</Script>
+		<Script name="Game Prim Script 5.3.lsl" guid="207a20ea-4c7a-479c-a2ed-d40f308c9c4a">
+		</Script>
+		<Script name="Game Prim script 5.6.lsl" guid="a6dcfa84-f808-4faf-a7b1-0e72f11a6a76">
+		</Script>
+		<Script name="Game Prim script 5.7.lsl" guid="a841722c-3c0a-4f36-8dfb-7d85f648ae49">
+		</Script>
+		<Script name="HUDbutton.lsl" guid="55f93081-5dd3-42d1-860d-e5b314a09336">
+		</Script>
+		<Sound name="Pass-Game Prim" guid="735636c6-5900-475e-b497-dbe90d9eb8ed">
+		</Sound>
+		<Script name="Remote script updater.lsl" guid="4cac9530-8b22-41e7-9004-b088290b8763">
+		</Script>
+		<Script name="Wave file updater.lsl" guid="a7e7de6c-8e00-4ef2-9872-959aa466a576">
+		</Script>
+	</Object>
+	<Object name="HUD Avatar" guid="7d814711-3f87-4ac5-8609-9d31eaa3e17d">
+		<Script name="Justin Controller.lsl" guid="5cb65822-80e0-48d1-967c-065767789010">
+		</Script>
+	</Object>
+	<Object name="Rezzer" guid="1a8cddb1-1215-4467-9237-de4f0552596a">
+		<Object name="Object" guid="8268fb63-152d-401b-9c3e-0cd7987020da">
+		</Object>
+		<Object name="Part2" guid="5a78265d-4f7a-4f5a-99d2-8189b4cd0f64">
+		</Object>
+		<Script name="rezzed.lsl" guid="cada3b48-b045-4096-b206-1ce40866a173">
+		</Script>
+		<Script name="rezzer.lsl" guid="c6fb990f-0b43-4905-9e1d-a2b9ea2b7e4d">
+		</Script>
+	</Object>
+	<Object name="Scoreboard" guid="890cb11c-f55c-4088-b9c4-48e3c9472bf8">
+		<Script name="Draw.lsl" guid="bbc70823-752c-4824-8ae5-09c4e1c870ee">
+		</Script>
+		<Script name="TimeBased.lsl" guid="43d3dc8d-59ef-472c-8e31-45e35bb65632">
+		</Script>
+	</Object>
+	<Object name="Sim Checker" guid="a8627e0a-9c0f-4b6f-946d-0b370072613b">
+		<Script name="Script.lsl" guid="a2a5986d-dd9d-4678-ac64-8b2825956098">
+		</Script>
+	</Object>
+	<Object name="Wizard Platform" guid="37085804-f800-4e50-a85e-bee67bb61c60">
+		<Object name="1-4stand" guid="96e9538b-d5b0-4361-8ee5-07036706015b">
+			<Texture name="PlasmaStar.tga" guid="54e22e7a-0248-4715-b29b-fda37cc707d4">
+			</Texture>
+			<Script name="rotate.lsl" guid="818d3617-46f4-4737-9289-cad7b667d8e8">
+			</Script>
+			<Script name="Script.lsl" guid="e785bcea-82d0-4ef7-9dcd-0e161ab17bd6">
+			</Script>
+			<Script name="seat smoke.lsl" guid="a6d889f1-02d3-4aed-b9e0-51d86b9d71ef">
+			</Script>
+			<Script name="seatpos.lsl" guid="ad7bdb32-014a-4c21-8b39-23afdc69db12">
+			</Script>
+			<Animation name="stand" guid="fd7ea859-53ca-4128-8028-48aa48bd3459">
+			</Animation>
+		</Object>
+		<Script name="advance game.lsl" guid="fbb5feec-76e5-41bf-86fd-023a5a9e68fc">
+		</Script>
+		<Script name="Register.lsl" guid="8f5b8322-821b-4ccd-9f85-9abd9253c76d">
+		</Script>
+		<Script name="rotate arrow.lsl" guid="92a963c3-28cf-4cdf-bb83-11e177fd947a">
+		</Script>
+		<Script name="rotate test.lsl" guid="f10af8a9-92a9-4aa3-bb62-e7421692b2ac">
+		</Script>
+		<Script name="rotate texture.lsl" guid="7ac45c83-4d36-4720-b4b1-8989aaa2805f">
+		</Script>
+		<Script name="Sendpos root.lsl" guid="7f99ea6d-0e24-45ae-9aae-242cfea8722a">
+		</Script>
+		<Script name="Sit.lsl" guid="a22c9eb1-0816-405a-9fe2-0f7de5cc5d1e">
+		</Script>
+		<Animation name="Stand" guid="94a4ef6f-dadb-4f2e-af2d-7c0411ca2cbc">
+		</Animation>
+	</Object>
+</Project>
