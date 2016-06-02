@@ -1,0 +1,36 @@
+<Project name="Dragon Rider Scripts" guid="3305b96f-9268-420e-a6e4-1a673c3255cb">
+	<Object name="Dragon Rider Flamer" guid="b6879d5b-0366-43c6-9845-1de8d6cf7242">
+		<Object name="Flame" guid="bf4fcf83-bb7e-48ed-a21f-6b8f68d0d6d4">
+			<Script name="Flame Script.lsl" guid="0071dddb-df61-4fbe-9df7-336f62a12043">
+			</Script>
+		</Object>
+		<Script name="Flame thrower 1.lsl" guid="93af7bcf-a174-4f81-bd5a-ee85d624d849">
+		</Script>
+		<Script name="Flame thrower 2.lsl" guid="eec28eae-e63c-46f0-ab04-f78a88f2c675">
+		</Script>
+	</Object>
+	<Object name="Dragon Rider root" guid="ce57fe01-16aa-45f0-a4cc-a1b1ae4099e5">
+		<Notecard name="Configure" guid="3c0ab986-1d17-4535-a7a3-5e19d9315f5b">
+		</Notecard>
+		<Script name="Flight.lsl" guid="3d480dda-5583-4e25-bc49-3baf9489fefa">
+		</Script>
+		<Script name="Ground Vehicle.lsl" guid="a7b7ba98-b00b-4d75-9f71-4ede2d1459c3">
+		</Script>
+		<Script name="VP Break Script.lsl" guid="66337878-32d8-41ef-9da0-f1caab0fa022">
+		</Script>
+	</Object>
+	<Object name="Dragon Rider Seat" guid="33f278a8-8bd1-40d2-a708-b0d417b19da0">
+		<Script name="Sit.lsl" guid="00835ded-68c4-4397-b1d5-c304ee83905b">
+		</Script>
+	</Object>
+	<Object name="Dragon Heal Cube" guid="37de35ba-5ea6-4e85-a4f3-5c6b18cfeec2">
+		<Script name="VP Break Heal.lsl" guid="25ee1cab-6a7e-446b-a552-194b6f97b292">
+		</Script>
+	</Object>
+	<Object name="VP Fire Extinquisher" guid="6f20a7ff-117d-4e05-86d0-57032c5fad1d">
+		<Script name="particles.lsl" guid="7e0073fd-8b49-49bc-a938-1c657b408679">
+		</Script>
+		<Script name="put it out.lsl" guid="2532b00a-67ed-448e-9ccd-e6406a814f40">
+		</Script>
+	</Object>
+</Project>
