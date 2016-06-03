@@ -1,4 +1,8 @@
 <Project name="Dragon Rider Scripts" guid="3305b96f-9268-420e-a6e4-1a673c3255cb">
+	<Object name="Dragon Heal Cube" guid="37de35ba-5ea6-4e85-a4f3-5c6b18cfeec2">
+		<Script name="VP Break Heal.lsl" guid="25ee1cab-6a7e-446b-a552-194b6f97b292">
+		</Script>
+	</Object>
 	<Object name="Dragon Rider Flamer" guid="b6879d5b-0366-43c6-9845-1de8d6cf7242">
 		<Object name="Flame" guid="bf4fcf83-bb7e-48ed-a21f-6b8f68d0d6d4">
 			<Script name="Flame Script.lsl" guid="0071dddb-df61-4fbe-9df7-336f62a12043">
@@ -21,10 +25,6 @@
 	</Object>
 	<Object name="Dragon Rider Seat" guid="33f278a8-8bd1-40d2-a708-b0d417b19da0">
 		<Script name="Sit.lsl" guid="00835ded-68c4-4397-b1d5-c304ee83905b">
-		</Script>
-	</Object>
-	<Object name="Dragon Heal Cube" guid="37de35ba-5ea6-4e85-a4f3-5c6b18cfeec2">
-		<Script name="VP Break Heal.lsl" guid="25ee1cab-6a7e-446b-a552-194b6f97b292">
 		</Script>
 	</Object>
 	<Object name="VP Fire Extinquisher" guid="6f20a7ff-117d-4e05-86d0-57032c5fad1d">

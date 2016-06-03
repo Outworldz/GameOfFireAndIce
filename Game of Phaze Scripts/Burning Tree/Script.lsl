@@ -140,21 +140,20 @@ default
     {
         if (channel == damagechan)
         {
-            // plAyEr <SPACE> ObjectName <SPACE>dragonattackerKey <SPACE> (float) damage
+            // llRegionSayTo(llDetectedkey(0),-80249,rezzedfrom+"|9|Fire");
             DEBUG("heard:" + message);
             list i;
             
-            i = llParseString2List(message, [" "], []);
-            if ( llSubStringIndex( llList2String(i, 0), "plAyEr "+ name) != -1)
-            {
-                string dragonattackerKey = llList2String(i, 1);
+            i = llParseString2List(message, ["|"], []);
 
-                float damage = (float)llList2String(i, 2);
+                string dragonattackerKey = llList2String(i, 0);
+
+                float damage = (float)llList2String(i, 1);
                 llListenRemove(hDamageCallback);
                 hDragonChannelBack = llListen(iDragonChannelBack,"","","");
                 DEBUG("Asking Dragon");
                 llSay(iDragonChannel, dragonattackerKey);
-            }
+            
         }
         else
         {
@@ -171,7 +170,7 @@ default
             if (Good_Bad)
                 Pass(Hit);
             else
-                Fail(Missed);
+                Fail(Miss);
 
         }
 

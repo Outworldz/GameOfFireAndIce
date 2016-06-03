@@ -257,24 +257,18 @@ state running
 		{
 			list i;
 			string name =llGetObjectName();
-			llParseString2List(message, [" "], []);
+			//llRegionSayTo(llDetectedkey(0),-80249,rezzedfrom+"|9|Fire");
+			i = llParseString2List(message, ["|"], []);
 
+			if (llToUpper(melee)=="ON"){
 
-			if ( llSubStringIndex( message, "plAyEr "+ name) != -1)
-			{
-				if (llToUpper(melee)=="ON"){
-
-					integer strlength = llStringLength(name) + 6;
-					message = llDeleteSubString(message,0,strlength);
-
-					i = llParseString2List(message, [" "], []);
 					float damage = (float)llList2String(i, 1);
 					health = health - damage;
 					checkhealth();
 				}
 
 
-			}
+			
 
 
 
