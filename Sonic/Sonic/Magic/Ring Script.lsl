@@ -17,7 +17,7 @@ string sonicringhurt = "sonicringhurt";
 integer debug = FALSE;
 integer INVISTIME = 60;        // 10 sec intervals
 
-// movement 
+// movement  
 float maxX = 0.0;
 float maxY = 0.0;
 

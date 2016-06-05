@@ -16,27 +16,37 @@
 // Shared media moving paintings
 // :Code:
 
+ 
+integer debug = FALSE;
 
 // Makes a box <2.8, 1.8, 0.10>
 // tapers the  x and y = 0.1
 // required shared media aka Media on a Prim (MOAP)
 // http://www.outworldz.com/game/justin.htm?Language=&Name=Justin%20the%20wise&AvatarKey=6f285c43-e656-42d9-b0e9-a78684fee15c&AvatarName=Ferd%20Frederix&PrimKey=testkey
 
-string url = "http://www.outworldz.com/game/justin.htm?";
+string url = "http://www.outworldz.com/game/Tara.htm?";
 
 key lastAvikey;
 integer vis; // TRUE if visibole
 
-float DISTANCE = 20.0;  // distance the picture will detect up an avatar, from 0.1 to 96.0.   Biggers numbers cause more lag
+float DISTANCE = 15.0;  // distance the picture will detect up an avatar, from 0.1 to 96.0.   Biggers numbers cause more lag
 float RATE = 5.0;       // seconds to scan for an avatar, lower numbers cause more lag but faster response.
 
 // do not modify below this point
-string no_viewer2 = "SharedMedia"; // a V2 needed image
+string no_viewer2 = "Game Status"; // a V2 needed image
 integer side = 1;
-string ablank = "2eb11b3e-4412-41eb-a240-6e757d3737d5";      // a blank image
-list rules = [
+string ablank = "Game Status";      // a blank image
+ 
+list page_visible ;     // hold the texture when avtar is away
+list picture_image;     // holds the regular image
+list web_rules;
+string lastname; 
+string newurl  ;
+
+doit() {
+    list rules = [
 PRIM_MEDIA_CONTROLS, PRIM_MEDIA_CONTROLS_MINI, 
-PRIM_MEDIA_HOME_URL, "http://www.outworldz.com",
+PRIM_MEDIA_HOME_URL,newurl,
 PRIM_MEDIA_AUTO_PLAY ,TRUE,
 PRIM_MEDIA_AUTO_LOOP, FALSE,
 PRIM_MEDIA_AUTO_SCALE, FALSE,
@@ -47,30 +57,31 @@ PRIM_MEDIA_PERMS_INTERACT, PRIM_MEDIA_PERM_ANYONE ,
 PRIM_MEDIA_PERMS_CONTROL,PRIM_MEDIA_PERM_ANYONE , 
 PRIM_MEDIA_CURRENT_URL ];
 
- 
-list page_visible ;     // hold the texture when avtar is away
-list picture_image;     // holds the regular image
-list web_rules;
- 
-doit() {
-    if (! vis && llDetectedKey(0) != lastAvikey) {
-        string newurl  = url + "Language=" + llGetAgentLanguage(llDetectedKey(0))
-                +"&Name=Justin%20the%20wise"
+
+        lastname = llDetectedName(0);
+        if (debug) llOwnerSay(lastname + " sensed");
+        
+        //llInstantMessage( llDetectedKey(0),"Enable Shared media.  Click the screen. ");
+        newurl  = url + "Language=" + llEscapeURL(llGetAgentLanguage(llDetectedKey(0)))
+                +"&Name=" + llEscapeURL(llGetObjectName())
                 +"&AvatarKey=" + llEscapeURL((string) llDetectedKey(0))
                 +"&AvatarName=" + llEscapeURL(llDetectedName(0)) 
                 +"&PrimKey=" + llEscapeURL((string) llGetKey())
-                +"&_=" + (string) llFrand(1);
+                +"&_=" + llEscapeURL((string) llFrand(1));
 
-        llSay(0,newurl);
+        if (debug) llOwnerSay(newurl);
         llSetPrimitiveParams([ PRIM_FULLBRIGHT,side, TRUE]);
         llSetPrimitiveParams(page_visible);
-         web_rules = rules + url;
+        
+         web_rules = rules + newurl;
         llSetPrimMediaParams(side,web_rules);
+        
+       // llOwnerSay(llDumpList2String(web_rules,","));
         vis ++;
-        lastAvikey = llDetectedKey(0);
-    }
-}
-
+        lastAvikey = llDetectedKey(0); 
+     
+}  
+  
 default
 {
     state_entry() 
@@ -107,25 +118,27 @@ default
     touch_start(integer n)
     {
         llSay(0,"Reset");
-        llClearPrimMedia(side);
-        llSleep(1.0);
-        vis = FALSE;
+        vis = TRUE;
         doit();
     }
      
     sensor(integer nh)
     {           
-        doit();
+        if (!vis++) {
+            
+            doit();
+        }
     } 
-  
+   
     no_sensor()
     {
-        if (vis) {
+        if (vis) {   
+            if (debug) llOwnerSay(lastname + "left");
             llClearPrimMedia(side);
             llSetPrimitiveParams(picture_image);
-            vis = 0;
            lastAvikey =NULL_KEY;
         }
+        vis = 0;
     }
     
     on_rez(integer p)
