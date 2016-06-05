@@ -1,0 +1,10 @@
+//Insert health after = sign
+health=40
+//type "on" if you want the text or "off" for the text off
+text=on
+//Types of Damage that it will take
+bullet=on
+melee=on
+ground=off
+//last one is bombs and acid and such
+other=on
