@@ -6,7 +6,7 @@
 		</Script>
 		<Object name="ring" guid="a4cbbf24-2f23-4118-b1c5-39dfcc262418">
 		</Object>
-		<Script name="Ring Script.lsl" guid="85648128-1d2c-4ad5-b796-618864abb9a9">
+		<Script name="Ring Script 1.1.lsl" guid="85648128-1d2c-4ad5-b796-618864abb9a9">
 		</Script>
 		<Sound name="sonicring.wav" guid="dfb329e6-5c5b-46ed-b067-abcca97c8ff7">
 		</Sound>
