@@ -23,6 +23,8 @@ string NPCRun = "dragon run";
 string NPCLeap= "Dragon Takeoff";
 string NPCTakeoff ="Dragon Takeoff";
 string NPCLand= "Dragon Land";
+string NPCFall = "dragon fall";
+string NPCGlide = "Dragon Glide2";
 
 string whatsplaying = "";      // the currently playing NPC automation
 
@@ -513,9 +515,15 @@ default
             vector vel = llGetVel();
 
             Speed = llVecMag(vel);
-            //DEBUG("vecMag Speed " + (string)Speed);            
+            //DEBUG("vecMag Speed " + (string)Speed);   
+            if (vel.z< -5){
+                if ((whatsplaying != NPCFall)&&(whatsplaying != NPCGlide))
+                    NPCPlay(NPCFall,1);
+                else
+                    NPCPlay(NPCGlide,0);
+            }        
 
-            if(Speed > 0.1)
+            else if(Speed > 0.1)
             {
                 if (gallop == 1.0) {
                     AvatarAnimate(AvatarWalk);
