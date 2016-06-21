@@ -1,0 +1,417 @@
+================================
+Category: Appearance
+================================
+
+
+
+play UUID
+	Attempts to play an animation
+
+play UUID stop
+	Stops UUID from playing
+
+
+appearance
+	Set your current appearance to your last saved appearance. Usage: appearance [rebake]
+
+attachments
+	Prints a list of the currently known agent attachments
+
+avatarinfo
+	Print out information on a nearby avatar. Usage: avatarinfo [firstname] [lastname]
+
+clone
+	Clone the appearance of a nearby avatar. Usage: clone [name]
+
+wear
+	Wear an outfit folder from inventory. Usage: wear [outfit name]
+
+================================
+Category: Communication
+================================
+
+echoMaster
+	Repeat everything that master says.
+
+im
+	Instant message someone. Usage: im [firstname] [lastname] [message]
+
+imgroup
+	Send an instant message to a group. Usage: imgroup [group_uuid] [message]
+
+say
+	Say something.  (usage: say (optional channel) whatever)
+
+shout
+	Shout something.
+
+whisper
+	Whisper something.
+
+
+
+============================	
+Category: Friends
+============================	
+
+friends
+	List avatar friends. Usage: friends
+
+mapfriend
+	Show a friends location. Usage: mapfriend UUID
+
+================================	
+Category: Groups
+================================
+
+searchgroups
+	Searches groups. Usage: searchgroups [search text]
+	
+activategroup
+	Set a group as active. Usage: activategroup GroupName
+
+groupmembers
+	Dump group members to console. Usage: groupmembers GroupName
+
+grouproles
+	Dump group roles to console. Usage: grouproles GroupName
+
+groups
+	List avatar groups. Usage: groups
+
+invitegroup
+	invite an avatar into a group. Usage: invitegroup AvatarUUID GroupUUID RoleUUID*
+
+joingroup
+	join a group. Usage: joingroup GroupName | joingroup UUID GroupId
+
+leavegroup
+	Leave a group. Usage: leavegroup GroupName
+
+
+
+============================	
+Category: Inventory
+============================	
+
+downloadtexture
+	Downloads the specified texture. 
+
+backuptext
+	Backup inventory to a folder on your hard drive. Usage:
+
+cd
+	Changes the current working inventory folder.
+
+createnotecard
+	Creates a notecard from a local text file and optionally embed an inventory item. Usage: createnotecard filename.txt [itemid]
+
+deleteFolder
+	Moves a folder to the Trash Folder
+
+download
+	Downloads the specified asset. Usage: download [uuid] [assetType]
+
+dumpoutfit
+	Dumps all of the textures from an avatars outfit to the hard drive. Usage: dumpoutfit [avatar-uuid]
+
+emptylostandfound
+	Empty inventory Lost And Found folder
+
+emptytrash
+	Empty inventory Trash folder
+
+give
+	Gives items from the current working directory to an avatar.
+
+i
+	Prints out inventory.
+
+ls
+	Lists the contents of the current working inventory folder.
+
+objectinventory
+	Retrieves a listing of items inside an object (task inventory). Usage: objectinventory [objectID]
+
+script
+	Reads TestClient commands from a file. One command per line, arguments separated by spaces. Usage: script [filename]
+
+taskrunning
+	Retrieves or set IsRunning flag on items inside an object (task inventory). Usage: taskrunning objectID [[scriptName] true|false]
+
+tree
+	Rez a tree.
+
+uploadimage
+	Upload an image to your inventory. Usage: uploadimage [inventoryname] [timeout] [filename]
+
+uploadscript
+	Upload a local .lsl file file into your inventory.
+
+viewnote
+	Downloads and displays a notecard asset
+
+xfer
+	Downloads the specified asset using the Xfer system. Usage: xfer [uuid]
+
+
+
+===============================	
+Category: Movement
+================================
+
+back
+	Sends the move back command to the server for a single packet or a given number of seconds. Usage: back [seconds]
+
+crouch
+	Starts or stops crouching. Usage: crouch [start/stop]
+
+fly
+	Starts or stops flying. Usage: fly [start/stop]
+
+FlyTo
+	Fly the avatar toward the specified position for a maximum of seconds. Usage: FlyTo x y z [seconds]
+
+follow
+	Follow another avatar. Usage: follow [FirstName LastName]/off.
+
+forward
+	Sends the move forward command to the server for a single packet or a given number of seconds. Usage: forward [seconds]
+
+gohome
+	Teleports home
+
+goto SimName/x,y,z
+	Teleport to a location 
+
+goto_landmark
+	Teleports to a Landmark. Usage: goto_landmark [UUID]
+
+jump
+	Jumps or flies up
+
+
+left
+	Sends the move left command to the server for a single packet or a given number of seconds. Usage: left [seconds]
+
+location
+	Show current location of avatar.
+
+moveto
+	Moves the avatar to the specified global position using simulator autopilot. Usage: moveto x y z
+
+right
+	Sends the move right command to the server for a single packet or a given number of seconds. Usage: right [seconds]
+
+sethome
+	Sets home to the current location.
+
+sit
+	Attempt to sit on the closest prim
+
+siton
+	Attempt to sit on a particular prim, with specified UUID
+
+stand
+	Stand
+
+turnto
+	Turns the avatar looking to a specified point. Usage: turnto x y z
+
+============================
+Category: Objects
+============================
+
+changeperms
+	Recursively changes all of the permissions for child and task inventory objects. Usage prim-uuid [copy] [mod] [xfer]
+
+derez
+	De-Rezes a specified prim.
+
+export
+	Exports an object to an xml file. Usage: export uuid outputfile.xml
+
+exportparticles
+	Reverse engineers a prim with a particle system to an LSL script. Usage: exportscript [prim-uuid]
+
+findobjects
+	Finds all objects, which name contains search-string. 
+
+findtexture
+	Checks if a specified texture is currently visible on a specified face. 
+
+import
+	Import prims from an exported xml file. Usage: import inputfile.xml [usegroup]
+
+priminfo
+	Dumps information about a specified prim. 
+
+primregex
+	Find prim by text predicat. 
+
+textures
+	Turns automatic texture downloading on or off. Usage: textures [on/off]
+touch
+	Attempt to touch a prim with specified UUID
+
+	
+============================	
+Category: Other
+============================	
+balance
+	Shows the amount of L$.
+
+giveAll
+	Gives you all it's money.
+
+showevent
+	Shows an Events details. Usage: showevent [eventID]
+
+md5
+	Creates an MD5 hash from a given password. Usage: md5 [password]
+
+showeffects
+	Prints out information for every viewer effect that is received. Usage: showeffects [on/off]
+
+bots
+	detects avatars that appear to be bots.
+
+cloneprofile
+	Clones another avatars profile as closely as possible. WARNING: This command will 
+
+who
+	Lists seen avatars.
+
+	
+================================
+Category: Search
+================================
+key2name
+	resolve a UUID to an avatar or group name. Usage: key2name UUID
+
+searchclassifieds
+	Searches Classified Ads. Usage: searchclassifieds [search text]
+
+searchevents
+	Searches Events list. Usage: searchevents [search text]
+
+searchland
+	Searches for land for sale. for usage information type: searchland
+
+searchpeople
+	Searches for other avatars. Usage: searchpeople [search text]
+
+searchplaces
+	Searches Places. Usage: searchplaces [search text]
+	
+
+		
+============================	
+Category: Simulator
+============================
+
+dilation
+	Shows time dilation for current sim.
+
+netstats
+	Provide packet and capabilities utilization statistics
+
+regioninfo
+	Prints out info about all the current region
+
+stats
+	Provide connection figures and statistics
+
+downloadterrain
+	Download the RAW terrain file for this estate. Usage: downloadterrain [timeout]
+
+uploadterrain
+	Upload a raw terrain file to a simulator. usage: uploadterrain filename
+
+agentlocations
+	Downloads all of the agent locations in a specified region. Usage: agentlocations [regionhandle]
+
+findsim
+	Searches for a simulator and returns information about it. Usage: findsim [Simulator Name]
+
+gridlayer
+	Downloads all of the layer chunks for the grid object map
+
+gridmap
+	Downloads all visible information about the grid map
+
+parceldetails
+	Displays parcel details from the ParcelTracker dictionary. Usage: parceldetails parcelID
+
+parcelinfo
+	Prints out info about all the parcels in this simulator
+
+primowners
+	Displays a list of prim owners and prim counts on a parcel. Usage: primowners parcelID
+
+	selectobjects
+	Displays a list of prim localIDs on a given parcel with a specific owner. Usage: selectobjects parcelID OwnerUUID
+
+wind
+	Displays current wind data
+	
+============================	
+Category: TestClient
+============================	
+
+primcount
+	Shows the number of objects currently being tracked.	
+
+uptime
+	Shows the login name, login time and length of time logged on.
+
+@
+	Restrict the following commands to one or all avatars. Usage: @ [firstname lastname]
+
+debug
+	Turn debug messages on or off. Usage: debug [level] where level is one of None, Debug, Error, Info, Warn
+
+help
+	Lists available commands. usage: help [command] to display information on commands
+
+load
+	Loads commands from a dll. (Usage: load AssemblyNameWithoutExtension)
+
+login
+	Logs in another avatar. Usage: login firstname lastname password [simname] [loginuri]
+
+logout
+	Log this avatar out
+
+packetlog
+	Logs a given number of packets to an xml file. Usage: packetlog 10 tenpackets.xml
+
+quit
+	Log all avatars out and shut down
+
+setmaster
+	Sets the user name of the master user. The master user can IM to run commands. Usage: setmaster [name]
+
+setMasterKey
+	Sets the key of the master user.  The master user can IM to run commands.
+
+
+sleep
+	Uses AgentPause/AgentResume and sleeps for a given number of seconds. Usage: sleep [seconds]
+
+waitforlogin
+	Waits until all bots that are currently attempting to login have succeeded or failed
+
+
+
+
+============================
+Category: Voice
+============================
+voiceaccount
+	obtain voice account info. Usage: voiceaccount
+
+
+voiceparcel
+	obtain parcel voice info. Usage: voiceparcel
+

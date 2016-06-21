@@ -1,0 +1,31 @@
+=== SITEPAL ============================
+
+http://www.outworldz.com/Game/Wavy.htm?Language=en&Name=Wavy&AvatarName=Ferd%20Frederix&AvatarKey=a4dd7d22-071e-47d3-98c7-4d793e07124a
+
+
+=== URL Persister =================================
+
+Register:
+    http://www.outworldz.com/cgi/GameRegister.plx?UUID=12345&URL=http://www.mitsi.com
+Find key:
+    http://www.outworldz.com/cgi/GameRegister.plx?UUID=12345
+
+
+
+Game Receiver:
+passkey = RegionCPU
+
+CMD=llRegionSay
+Channel = (integer) > 0
+Message = text to send on channel
+ACK on channel > 0
+NAK if channel == 0
+
+CMD=llInstantMessage
+AvatarKey= UUID
+Message=text to send to UUID
+ACK on success
+NAK on bad key or length message == 0
+
+Bad command: UNK
+
