@@ -33,6 +33,10 @@
 		<Script name="Sheep.lsl" guid="99ff0fc4-0ab7-410e-b85b-3fd9cd3c4aab">
 		</Script>
 	</Object>
+	<Object name="Dragon Rezzer" guid="e31fe064-2511-414e-9db3-aeba3118a9f5">
+		<Script name="Script.lsl" guid="424617a5-4243-45b9-a8a2-a91e06ad23fb">
+		</Script>
+	</Object>
 	<Object name="Dragon Sensor" guid="8ef8745a-2fec-42a3-8a42-306a889156ee" active="true">
 		<Sound name="flameSound.wav" guid="a5f4d101-2a77-432f-9c75-45d760da586e">
 		</Sound>
@@ -62,25 +66,17 @@
 		</Script>
 		<Script name="Game Prim script 5.6.lsl" guid="a6dcfa84-f808-4faf-a7b1-0e72f11a6a76">
 		</Script>
-		<Script name="NPC Game Prim script 5.7.lsl" guid="a841722c-3c0a-4f36-8dfb-7d85f648ae49">
+		<Script name="Game Prim Script 5.8" guid="7886bec5-c181-4f75-9d0e-b1b1fbc35e9d">
 		</Script>
 		<Script name="HUDbutton.lsl" guid="55f93081-5dd3-42d1-860d-e5b314a09336">
+		</Script>
+		<Script name="NPC Game Prim script 5.7.lsl" guid="a841722c-3c0a-4f36-8dfb-7d85f648ae49">
 		</Script>
 		<Sound name="Pass-Game Prim" guid="735636c6-5900-475e-b497-dbe90d9eb8ed">
 		</Sound>
 		<Script name="Remote script updater.lsl" guid="4cac9530-8b22-41e7-9004-b088290b8763">
 		</Script>
-		<Script name="Game Prim Script 5.8" guid="7886bec5-c181-4f75-9d0e-b1b1fbc35e9d">
-		</Script>
 		<Script name="Wave file updater.lsl" guid="a7e7de6c-8e00-4ef2-9872-959aa466a576">
-		</Script>
-	</Object>
-	<Object name="Dragon Rezzer" guid="e31fe064-2511-414e-9db3-aeba3118a9f5">
-		<Script name="Script.lsl" guid="424617a5-4243-45b9-a8a2-a91e06ad23fb">
-		</Script>
-	</Object>
-	<Object name="SitePal Screen" guid="7d814711-3f87-4ac5-8609-9d31eaa3e17d">
-		<Script name="Sitepal Controller.lsl" guid="5cb65822-80e0-48d1-967c-065767789010">
 		</Script>
 	</Object>
 	<Object name="Rezzer" guid="1a8cddb1-1215-4467-9237-de4f0552596a">
@@ -101,6 +97,10 @@
 	</Object>
 	<Object name="Sim Checker" guid="a8627e0a-9c0f-4b6f-946d-0b370072613b">
 		<Script name="Script.lsl" guid="a2a5986d-dd9d-4678-ac64-8b2825956098">
+		</Script>
+	</Object>
+	<Object name="SitePal Screen" guid="7d814711-3f87-4ac5-8609-9d31eaa3e17d">
+		<Script name="Sitepal Controller.lsl" guid="5cb65822-80e0-48d1-967c-065767789010">
 		</Script>
 	</Object>
 	<Object name="Wizard Platform" guid="37085804-f800-4e50-a85e-bee67bb61c60">

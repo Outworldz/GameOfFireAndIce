@@ -22,8 +22,8 @@
 // 5.4-5.6 are for NPC use
 // 5.8 fixed sounds by parsing spaces to fix server bug, added llRegionSayTo to control lag
 
-// LOGIN URL = http://www.outworldz.com/game    
-         
+// LOGIN URL = http://www.outworldz.com/game
+
 // fiddly bits
 integer debug = FALSE;
 
@@ -43,7 +43,7 @@ string Version = "5.3";
 
 // Steers the conversation to the correct actor
 Tell (string story,key lasttouched) {
-    
+
     if (debug) llOwnerSay("tell");
     string lang = llGetAgentLanguage(lasttouched);
     string Name = llKey2Name(lasttouched);
@@ -51,7 +51,7 @@ Tell (string story,key lasttouched) {
     if (lang == "")
         lang = "en";
 
-     //lang="de";  // test  to check german, assuming server side code is enabled
+    //lang="de";  // test  to check german, assuming server side code is enabled
 
     if (SPEACHOPTION == 0) {
         if (debug) llOwnerSay("llSaying");
@@ -61,7 +61,7 @@ Tell (string story,key lasttouched) {
         if (debug) llOwnerSay("Sending IM");
         llRegionSayTo(lasttouched,0,story);        // v 5.8
     } else {
-        llOwnerSay("Illegal SpeechOption");
+            llOwnerSay("Illegal SpeechOption");
     }
 }
 
@@ -72,17 +72,17 @@ Tell (string story,key lasttouched) {
 Ping(string AvatarName,key AvatarKey)
 {
     string Language = llEscapeURL(llGetAgentLanguage(AvatarKey));
-    
+
     if (debug)
         Language = "en";
-        
+
     string Me = llEscapeURL(llGetObjectName());
     string Them = llEscapeURL(AvatarKey);
     string Theirname = llEscapeURL(AvatarName);
     if (debug)
         Theirname = "Ferd Frederix";
 
-    string url = "http://192.168.1.4/cgi/llgame2.plx?PrimName=" + (string) Me + "&Ver=" + Version + "&AvatarKey=" + (string)Them + "&Language=" + Language;
+    string url = "http://outworldz.com/cgi/llgame2.plx?PrimName=" + (string) Me + "&Ver=" + Version + "&AvatarKey=" + (string)Them + "&Language=" + Language;
 
     if (AvatarKey != NULL_KEY)
         url +=  "&Avatar=" + (string)Theirname  ;
@@ -99,7 +99,7 @@ default
     state_entry()
     {
         llSetTimerEvent(1);
-          
+
         if (COLLIDE == TRUE)
         {
             llSetAlpha(0,ALL_SIDES);
@@ -124,13 +124,13 @@ default
     http_response(key request_id, integer status, list metadata, string body)
     {
         integer where = llListFindList(stack,   [request_id]) ;
-        if (where > -1)      
+        if (where > -1)
         {
             stack = llDeleteSubList(stack,where-HTTPSTRIDE,where);    // key, name, request ID
 
             if (llGetListLength(stack) > 10 * HTTPSTRIDE )    // 10 at a time, the rest can go phooey
                 stack = llDeleteSubList( stack, 0, HTTPSTRIDE ); // kill off 1st element, is old
-    
+
             // $status|$display|$sound|$Channel|$ChannelText|$AvatarKey
             if (debug) llOwnerSay("Response Body:" + body);
 
@@ -154,7 +154,7 @@ default
             if (statusType == "ACK"   )
             {
                 if ( (llStringLength(AvatarKey) > 1) && (llStringLength(storyText) > 1)) {
-                    if (debug) llOwnerSay("Calling tell");    
+                    if (debug) llOwnerSay("Calling tell");
                     Tell (storyText, AvatarKey);    // speak it one of 3 ways
                 }
 
@@ -170,23 +170,23 @@ default
                     if (debug) llOwnerSay("Sending Link command " +  ActionText  + " on channel " + (string) ActionChannel);
                     llMessageLinked(LINK_SET,ActionChannel,ActionText, AvatarKey); // pass it to other scripts.
                 }
-                    
-                
-                if (ActionChannel)
-                     llSay(ActionChannel,ActionText); // pass it to other scripts.
 
-                    
-                    // if it is there and num = 1, give it as a gift
+
+                if (ActionChannel)
+                    llSay(ActionChannel,ActionText); // pass it to other scripts.
+
+
+                // if it is there and num = 1, give it as a gift
                 if (ActionChannel  == 1)  {
                     if (debug) llOwnerSay("Giving item:" + ActionText);
                     llGiveInventory(AvatarKey,ActionText);
                 }
 
-                    // if it is there and num = 2, rez it as an effect
+                // if it is there and num = 2, rez it as an effect
                 if (ActionChannel == 2 ) {
-                     if (debug) llOwnerSay("Rezzing Object:" + ActionText);
+                    if (debug) llOwnerSay("Rezzing Object:" + ActionText);
                     llRezObject(ActionText ,llGetPos() + OFFSET,  ZERO_VECTOR , ZERO_ROTATION,0);
-                
+
                 }
             }
         }
@@ -213,10 +213,10 @@ default
                         if (x == NULL_KEY)
                             Ping(llDetectedName(i), llDetectedKey(i));
                     } else {
-                        Ping(llDetectedName(i), llDetectedKey(i));
+                            Ping(llDetectedName(i), llDetectedKey(i));
                     }
                 }
-            } 
+            }
         }
     }
     touch_start(integer total_number)
@@ -234,13 +234,13 @@ default
                 Ping(llDetectedName(i), llDetectedKey(i));
             }
         }
-    } 
-   
+    }
+
     changed(integer mask)
     {
         if (mask & CHANGED_INVENTORY)
         {
-            llResetScript(); 
+            llResetScript();
         }
         if (mask & CHANGED_LINK)
         {
@@ -250,11 +250,11 @@ default
                 Ping(llKey2Name(avatarKey), avatarKey);
             }
         }
-         if (mask & CHANGED_REGION_RESTART)
-         {
-             llResetScript();
-         }
+        if (mask & CHANGED_REGION_RESTART)
+        {
+            llResetScript();
+        }
     }
- 
+
 
 }
